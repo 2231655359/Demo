@@ -1,0 +1,104 @@
+/* 基础样式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+}
+
+.mid {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.ikun img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.ikun_mid {
+  flex: 1;
+}
+
+.ikun_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.ikun_r0, .ikun_r1, .ikun_r2, .ikun_r3, .ikun_r4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.normal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill_ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill_ul li {
+  margin-bottom: 10px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  .mid {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .ikun img {
+      margin-bottom: 20px;
+  }
+
+  .ikun_mid, .ikun_right {
+      text-align: center;
+  }
+
+  .normal {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .normal p {
+      margin-bottom: 5px;
+  }
+
+  .skill_ul {
+      margin: 0 auto;
+      max-width: 300px;
+  }
+}
